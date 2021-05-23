@@ -441,15 +441,18 @@ span {
 
 /*////////////////////// FOOTER //////////////////////*/
 .footer {
-  display: flex;
   background-color: var(--blaсk-background-color);
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
   align-items: baseline;
 }
 
-.container-footer {
+.address-footer {
   margin-right: 70px;
 }
 
@@ -537,9 +540,6 @@ span {
 
 .filters-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.filters-item {
 }
 
 .btn-portfolio {
