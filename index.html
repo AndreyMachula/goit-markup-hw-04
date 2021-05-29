@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-	 <meta charset="UTF-8">
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <title>WebStudio</title>
-	 <link rel="preconnect" href="https://fonts.gstatic.com">
-	 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-		rel="stylesheet">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-			integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-			crossorigin="anonymous" />
-	 <link rel="stylesheet" href="./css/styles.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WebStudio</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+				integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+				crossorigin="anonymous" />
+		<link rel="stylesheet" href="./css/styles.css">
  </head>
 
 	<body>
 		<header class="page-header">
-				<div class="container header-container">
+				<div class="header-container container">
 					<nav class="header-nav">
 						<a class="logo-header logo text" href="./index.html" lang="en"><span>Web</span>Studio</a>
 
@@ -57,9 +58,9 @@
 
 		<!--Hero-->
 			<section class="section-hero">
-				<div class="container hero-container">
+				<div class="hero-container container">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="btn-hero">Заказать услугу</button>
+					<button class="btn-hero" type="button" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
@@ -118,13 +119,24 @@
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="work-list list">
 						<li class="work-item">
-							<img class="work-img" src="./images/working_out/img_1.jpg" alt="проектирование" width="370" height="294">
+							<div class="label-work">	
+								<img class="work-img" src="./images/working_out/img_1.jpg" alt="проектирование" width="370" height="294">
+								<p class="label-description">Десктопные приложения</p>
+							</div>
 						</li>
 						<li class="work-item">
-							<img class="work-img" src="./images/working_out/img_2.jpg" alt="дизайн" width="370" height="294">
+							<div class="label-work">	
+								<img class="work-img" src="./images/working_out/img_2.jpg" alt="дизайн" width="370" height="294">
+								<p class="label-description">Мобильные приложения</p>
+							</div>
+
 						</li>
 						<li class="work-item">
-							<img class="work-img" src="./images/working_out/img_3.jpg" alt="интерактивность" width="370" height="294">
+							<div class="label-work">	
+								<img class="work-img" src="./images/working_out/img_3.jpg" alt="интерактивность" width="370" height="294">
+								<p class="label-description">Дизайнерские решения</p>
+							</div>
+
 						</li>
 					</ul>
 				</div>
@@ -366,45 +378,45 @@
 									Украинки, 26</a>
 							</li>
 							<li class="contacts-item">
-								<a class="contact-link text" href="mailto:info@example.com">info@example.com</a>
+								<a class="contact-link mail text" href="mailto:info@example.com">info@example.com</a>
 							</li>
 							<li class="contacts-item">
-								<a class="contact-link text" href="tel:+380991111111">+38 099 111 11 11</a>
+								<a class="contact-link tel text" href="tel:+380991111111">+38 099 111 11 11</a>
 							</li>
 						</ul>
 					</address>
 				</div>
 				<div class="footer-social">
 					<p class="social-title"><b>присоединяйтесь</b></p>
-					<ul class="footer-socisl-list list">
-						<li class="footer-socisl-item">
-							<a class="footer-socisl-link" href="https://www.instagram.com/"
+					<ul class="footer-social-list list">
+						<li class="footer-social-item">
+							<a class="footer-social-link" href="https://www.instagram.com/"
 							target="_blank" rel="noreferrer noopener">
-								<svg class="footer-socisl-icon">
+								<svg class="footer-social-icon">
 									<use href="./images/sprite.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer-socisl-item">
-							<a class="footer-socisl-link" href="https://www.twitter.com/"
+						<li class="footer-social-item">
+							<a class="footer-social-link" href="https://www.twitter.com/"
 							target="_blank" rel="noreferrer noopener">
-								<svg class="footer-socisl-icon">
+								<svg class="footer-social-icon">
 									<use href="./images/sprite.svg#twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer-socisl-item">
-							<a class="footer-socisl-link" href="https://www.facebook.com/"
+						<li class="footer-social-item">
+							<a class="footer-social-link" href="https://www.facebook.com/"
 							target="_blank" rel="noreferrer noopener">
-								<svg class="footer-socisl-icon">
+								<svg class="footer-social-icon">
 									<use href="./images/sprite.svg#facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer-socisl-item">
-							<a class="footer-socisl-link" href="https://www.linkedin.com/"
+						<li class="footer-social-item">
+							<a class="footer-social-link" href="https://www.linkedin.com/"
 							target="_blank" rel="noreferrer noopener">
-								<svg class="footer-socisl-icon">
+								<svg class="footer-social-icon">
 									<use href="./images/sprite.svg#linkedin"></use>
 								</svg>
 							</a>
@@ -413,5 +425,11 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-close-btn" data-modal-close>X</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
